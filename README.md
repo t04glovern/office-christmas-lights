@@ -10,6 +10,15 @@
 
 ## Setup
 
+### Hardware
+
+* 1x WS2812B 60LED @ 1m strip
+* 1x Arduino Uno
+
+<img src="https://raw.githubusercontent.com/t04glovern/office-christmas-lights/master/design/ws2812b-led-design.png" align="center" width="650"/>
+
+### Code
+
 You can change the way the LED function using some of the variables found in `main.cpp`. Extra configuration around the colour definitions can be found in `main.h`
 
 All credit for most of this implementation goes to [kriegsman's TwinkleFOX implementation](https://gist.github.com/kriegsman/756ea6dcae8e30845b5a)
@@ -57,6 +66,13 @@ framework = arduino
 lib_deps =
   FastLED@3.1.6
 ```
+
+## Gallary
+
+<img src="https://raw.githubusercontent.com/t04glovern/office-christmas-lights/master/img/rbg-led-project-01.jpg" align="center" width="650"/>
+<img src="https://raw.githubusercontent.com/t04glovern/office-christmas-lights/master/img/rbg-led-project-02.jpg" align="center" width="650"/>
+<img src="https://raw.githubusercontent.com/t04glovern/office-christmas-lights/master/img/rbg-led-project-03.jpg" align="center" width="650"/>
+<img src="https://raw.githubusercontent.com/t04glovern/office-christmas-lights/master/img/rbg-led-project-04.jpg" align="center" width="650"/>
 
 ## License
 
