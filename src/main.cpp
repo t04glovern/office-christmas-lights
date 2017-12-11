@@ -21,7 +21,7 @@ CRGBArray<NUM_LEDS> leds;
 // Overall twinkle speed.
 // 0 (VERY slow) to 8 (VERY fast).
 // 4, 5, and 6 are recommended, default is 4.
-#define TWINKLE_SPEED 4
+int TWINKLE_SPEED = 4;
 
 // Overall twinkle density.
 // 0 (NONE lit) to 8 (ALL lit at once).
@@ -78,6 +78,11 @@ void loop()
   }
 
   drawTwinkles(leds);
+
+  // read the input on analog pin 0:
+  // 0 - 760
+  int sensorValue = analogRead(A0);
+  TWINKLE_SPEED = map(sensorValue, 0, 780, 0, 8);
 
   FastLED.show();
 }
